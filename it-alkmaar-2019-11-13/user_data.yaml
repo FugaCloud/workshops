@@ -1,0 +1,21 @@
+#cloud-config
+runcmd:
+  - [ sh, -c, 'echo ubuntu:it=alkmaar | chpasswd' ]
+
+#ssh_authorized_keys:
+#  - ssh-rsa AAAAB...
+
+#packages:
+#  - nginx-light
+#write_files:
+#  - path: /var/www/html/index.html
+#    content: |
+#      <html>
+#        <head>
+#          <title>IT=Alkmaar</title>
+#        </head>
+#        <body>
+#          <h1>Welkom bij de Infra is Code workshop van Fuga Cloud!</h1>
+#          <p>Deze website wordt geserveerd door cloud instance ${tf_hostname}.</p>
+#        </body>
+#      </html>
